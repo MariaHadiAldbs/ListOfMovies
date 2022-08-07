@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>React excersises 1- table of movies</title>
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mouse+Memoirs&display=swap"
+      rel="stylesheet"
+    />
+    <script src="App.js"></script>
+  </head>
+  <body>
+    <style>
+      table {
+        border-collapse: collapse;
+        width: 1000px;
+        margin: 20px 50px 0px 100px;
+      }
+
+      th,
+      td {
+        padding: 15px 5px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+      }
+      .movieName {
+        padding-right: 40px;
+      }
+      .btn {
+        margin-left: 60px;
+      }
+      h4 {
+        margin-left: 100px;
+        margin-top: 30px;
+        color: green;
+        font-family: "Mouse Memoirs", sans-serif;
+        font-size: 200%;
+      }
+    </style>
+    <h4 id="h4">there are 9 movies in the list</h4>
+    <table id="table">
+      <tr id="heading">
+        <th class="movieName">Movie name</th>
+        <th>Genre</th>
+        <th>Price</th>
+        <th>Rate</th>
+        <th></th>
+      </tr>
+
+      <tr id="DieHard">
+        <td class="movieName">Die hard</td>
+        <td>Action</td>
+        <td>$100</td>
+        <td>4.7</td>
+        <td class="button">
+          <button
+            type="button"
+            onclick="DieHard()"
+            class="btn btn-danger btn-sm"
+          >
+            Delete
+          </button>
+        </td>
+      </tr>
+      <tr id="myBestFriendsWedding">
+        <td class="movieName">my best friend's wedding</td>
+        <td>romance</td>
+        <td>$300</td>
+        <td>3.5</td>
+        <td class="button">
+          <button
+            type="button"
+            onclick="myBestFriendsWedding()"
+            class="btn btn-danger btn-sm"
+          >
+            Delete
+          </button>
+        </td>
+      </tr>
+      <tr id="theIntern">
+        <td class="movieName">the intern</td>
+        <td>drama</td>
+        <td>$250</td>
+        <td>4.8</td>
+        <td class="button">
+          <button
+            type="button"
+            onclick="theIntern()"
+            class="btn btn-danger btn-sm"
+          >
+            Delete
+          </button>
+        </td>
+      </tr>
+      <tr id="Avengers">
+        <td class="movieName">Avengers</td>
+        <td>Adventure</td>
+        <td>$250</td>
+        <td>4.7</td>
+        <td class="button">
+          <button
+            type="button"
+            onclick="Avengers()"
+            class="btn btn-danger btn-sm"
+          >
+            Delete
+          </button>
+        </td>
+      </tr>
+      <tr id="theFaultInOurStars">
+        <td class="movieName">the fault in our stars</td>
+        <td>Romance</td>
+        <td>$250</td>
+        <td>4.8</td>
+        <td class="button">
+          <button
+            type="button"
+            onclick="theFaultInOurStars()"
+            class="btn btn-danger btn-sm"
+          >
+            Delete
+          </button>
+        </td>
+      </tr>
+      <tr id="lairLair">
+        <td class="movieName">lair lair</td>
+        <td>fantasy</td>
+        <td>$250</td>
+        <td>4.1</td>
+        <td class="button">
+          <button
+            type="button"
+            onclick="lairLair()"
+            class="btn btn-danger btn-sm"
+          >
+            Delete
+          </button>
+        </td>
+      </tr>
+      <tr id="theFounder">
+        <td class="movieName">the founder</td>
+        <td>History</td>
+        <td>$250</td>
+        <td>4.4</td>
+        <td class="button">
+          <button
+            type="button"
+            onclick="theFounder()"
+            class="btn btn-danger btn-sm"
+          >
+            Delete
+          </button>
+        </td>
+      </tr>
+      <tr id="twilight">
+        <td class="movieName">twilight</td>
+        <td>Romance</td>
+        <td>$250</td>
+        <td>4.4</td>
+        <td class="button">
+          <button
+            type="button"
+            onclick="twilight()"
+            class="btn btn-danger btn-sm"
+          >
+            Delete
+          </button>
+        </td>
+      </tr>
+      <tr id="theTwin">
+        <td class="movieName">the twin</td>
+        <td>horror</td>
+        <td>$250</td>
+        <td>3.2</td>
+        <td class="button">
+          <button
+            type="button"
+            onclick="theTwin()"
+            class="btn btn-danger btn-sm"
+          >
+            Delete
+          </button>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
